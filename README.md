@@ -5,11 +5,13 @@
 ```shell
 $ git clone https://github.com/ken-sayama/setup-redash-locally.git
 
-# create database
 $ cd setup-redash-locally
 
+# create database
+$ docker compose run --rm server create_db
+
 # run services
-$ docker-compose up
+$ docker compose up
 ```
 
 Please follow the link below for initial setup
