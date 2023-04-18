@@ -38,7 +38,7 @@ services:
   nginx:
     image: redash/nginx:latest
     ports:
-      - "8080:80"
+      - "9090:80"
     depends_on:
       - server
     links:
